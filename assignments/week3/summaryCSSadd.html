@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Summary</title>
+
+    <style>
+        h1 {
+            color:green;
+            font-size: 36px;
+        }
+
+        ul li {
+            color:blue;
+
+        }
+
+        #special {
+            font-family:"courier";
+            background-color: yellow;
+        }
+
+        #password {
+            background-color:aqu
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            border-width: 10px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        #first-table td {
+            border: 1px solid green;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #username {
+            background-color:chartreuse;
+            /* margin: 10px 15px 20px 25px; /* top right bottom left OR t&b l&r*/
+            margin: 40px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <article>
+            <h1>Some Heading in Large Text</h1>
+            <p>Some more content here about anything</p>
+            <h2>How about some more headings?</h2>
+            <p>Here is my content!</p>
+            
+            <!-- How to insert breaks between elements in the page -->
+            <br/>
+     
+            <!-- Demo for un-ordered lists with different styles -->
+            <h2>List of Travel Destinations</h2>
+            <ul>
+                <li>Ireland</li>
+                <li>Denmark</li>
+                <li>China</li>
+                <li>Australia</li>
+            </ul>
+
+            <!-- ordered list demo, see the numbers -->
+            <h2>Ordered List of How to <del>Make</del> Enjoy a PBJ</h2>
+                <ol>
+                    <li>Get ingredients</li>
+                    <li>Make the sandwich</li>
+                    <li>Eat the sandwich</li>
+                    <li>Repeat</li>
+                </ol>
+            
+            <h2>Dictionary lists</h2>
+            <dl>
+                <dt>Fake</dt>
+                <dd>Some which is not true</dd>
+            </dl>
+
+            <!-- Section for image tags -->
+            <h2>Image Showcase</h2>
+            <figure>
+                <img src="./image.png"  alt="The hedgehog is cute, but prickly, critter" title="The hedgehog is cute, but prickly, critter" width=500>
+                <figcaption id="special">This is our new favorite animal!</figcaption>
+            </figure>
+
+    
+
+            <table id="first-table">
+                <!-- rows first, then columns -->
+                <thead>
+                    <!-- table row -->
+                    <tr>
+                        <!-- table data -->
+                        <td>first name</td>
+                        <td>last name</td>
+                        <td>DOB</td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <td>Joe</td>
+                    <td>Schmoe</td>
+                    <td>01/01/2001</td>
+                </tbody>
+            </table>
+    
+            <form>
+                <label for="username">Username</label>
+                <input id="username" type="text" />
+                <label for="password">Password</label>
+                <input id="password" type="password" />
+                <input type="submit" />
+            </form>
+
+        </article>
+
+    </main>
+
+<footer>Optional Section?</footer>
+
+</body>
+
+
+
+
+</html>
