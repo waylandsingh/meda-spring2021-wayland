@@ -6,7 +6,10 @@
     <title>Specificity Test</title>
 
     <style>
-        
+        #redbox {
+            background-color:teal;
+        }
+        /* the latest box is the one that is applied last, and therefore stays */
         #redbox {
             height: 100px;
             background-color: red;
@@ -21,6 +24,15 @@
             height: 100px;
             background-color: green;
         }
+
+        /* this element selector has lower specificity than the above; doesn't show effect */
+        div {
+            background-color: white;
+        }
+
+        body main form #password {}
+        body .container .sidebar p {}
+        
     </style>
 </head>
 <body>
