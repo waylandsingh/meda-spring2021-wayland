@@ -1,1 +1,34 @@
-asd
+A. Color choices: 
+	Dark themes are the best, so dark background with lighter color text, with some colors that differentiate the element types from one another
+	body - White
+	header - Light Gray
+	link - blue/light blue 
+	background - charcoal/black
+
+
+__Content Writeups__	
+PROJECTS
+Modelling project: Ag. Safety Beacon
+
+Building Permit Prediction
+
+Computer Vision(?tbd)
+
+CONTACT
+Email: 
+Cell: *** *** ****
+
+ABOUT ME
+
+Wayland Singh is a Fellow in Data Science at The Data Incubator. His interests include modelling the performance of engineering systems in agriculture, and is looking for ways to learn and apply machine learning techniques to interesting problems. He is located in the San Francisco Bay Area and is currently on the look out for opportunities. His skills include: Python, SQL and Web Development (learning in progress).
+
+In his graduate work at UC Davis, he focused on developing a performance model for agricultural safety beacons to prevent aerial pesticide exposure incidents, as well as to reduce the chances of UAV/drone collisions. Other work and interests included utility cost savings, sustainable project scoping, and serving as a fabrication and project advisor for undergraduates. In his spare time, he likes to build and tinker with various household appliances: bikes, electronics, and anything fun that shows up on the free section of Craigslist. If you're interested in a curious, competent individual, consider reaching out.
+
+__List of Images to be Used__
+Headshot/photo of me: no license needed
+Image of Building planning for permit prediction project: unsplash/free license https://unsplash.com/photos/SvzFQzdwQBg
+Image of Aviation beacon: from Wayland Singh
+Computer Vision Placeholder: <span>Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Charles Deluvio</a> on <a href="https://unsplash.com/s/photos/glasses?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+font-awesome icons for skills, email etc
+
+Resume File attached
