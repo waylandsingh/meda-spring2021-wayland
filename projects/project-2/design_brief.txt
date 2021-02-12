@@ -8,15 +8,16 @@ A. Color choices:
 
 __Content Writeups__	
 PROJECTS
-Modelling project: Ag. Safety Beacon
+Modelling project: Ag. Safety Beacon cut/paste from another writeup, once located.
 
-Building Permit Prediction
+Building Permit Prediction: Cut/paste from another writeup, once I can find it
 
-Computer Vision(?tbd)
+Computer Vision(?tbd): I'm hoping to have something cool to put in here soon.
 
 CONTACT
-Email: 
+Email: wsingh203@gmail.com
 Cell: *** *** ****
+Linkedin: https://www.linkedin.com/in/wayland-singh/
 
 ABOUT ME
 
