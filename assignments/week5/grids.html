@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #grid-container {
+            display: grid;
+            height: 400px;
+            /* width: 800px; */
+            background-color: powderblue;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            column-gap: 10px;
+            row-gap: 5px;
+        }
+
+        #grid-container div {
+        }
+
+        #child1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            /* grid: 1/3/1/3 is the same as the above 4 properties  */
+            text-align: center;
+            line-height: 350px; /*cheat code for vertical alignment: set light height equal to container height */
+            background-color: red;
+            color: white;
+            border: solid 5px black;
+            border-radius: 25px;
+            
+        }
+
+        #child2 {
+            background-color: tan;
+        }
+
+        #child3 {
+            background-color: yellow;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        #child4 {
+            background-color:rosybrown;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="grid-container">
+        <div id="child1"><p>ajkhkjahfkjhaskjhjasf sahfajhfdfd</p></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div>
+    </div>
+</body>
+</html>
