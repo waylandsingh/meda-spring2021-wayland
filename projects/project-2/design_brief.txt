@@ -33,3 +33,20 @@ Computer Vision Placeholder: <span>Photo by <a href="https://unsplash.com/@charl
 font-awesome icons for skills, email etc
 
 Resume File attached
+
+
+E. Portfolio Likes/Dislikes
+1. https://workdiary.de/
+	Like: stark colors, cool animations (especially the cursor), minimalist, very clear content
+	Dislike: body font choice is a bit difficult to read, animation changes the color of body midway through reading it, which can be jarring
+	Sections: Header and footer are empty, with all items and animations in side the body, maybe because of animations/effects?
+
+2. https://wholedesignstudios.com/
+	Like: good structure, well spaced, good contrast, font sizes are good. Nice flow of content with scrolling articles as well.
+	Dislike: nav bar isn't fixed (personal preferences)
+	Sections: Header includes a nav bar and some cart-things. Body includes content (offers, sponsors, pictures, articles), Footer is mostly site navigation and a 'top of page button'
+
+3. https://www.electricpulp.com/
+	Like: Nice, minimal design with large, clear fonts, nice contact form in the footer.
+	Dislike: Structure is a bit unclear; not sure what content is below the title. Some colored blocks peeking out behind sections in unexpected way. Low contrast color for some Footer text.
+	Sections: Header has a navbar that is fixed (whoo!) with links to other important pages. Body has all the content. Footer has contact info and a contact form.
