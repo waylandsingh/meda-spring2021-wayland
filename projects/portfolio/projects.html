@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Base Template</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
@@ -15,23 +15,54 @@
     </header>
     <main>
         <div id="content">
-            Content Placeholder
+            <div id="project1" class="two-col-content">
+				<div id="project1-img"><img src="./images/remodel.jpg" alt="remodelling a room">
+				</div>
+				<div id="project1-content">
+					<h1>Building Time</h1>
+					<p>Ever wanted to know how long it would take to get your remodel going?</p>
+					<p>In this project, I used machine learning and public data to provide predictions of building permit approval.</p>
+					<p>Check it out at: <a href="https://buildingtime.herokuapp.com/">Building Time on Heroku</a><p>
+				</div>			
+			</div>
+			
+			<div id="project2" class="two-col-content">
+				<div id="project2-img"><img src="./images/beacon.jpg" alt="agricultural safety beacon">
+				</div>
+				<div id="project2-content">
+					<h1>Ag Air Safety</h1>
+					<p>Preventing accidents in farming and airplane or aerial drone operations is the goal of this project.</p>
+					<p>To get a better understanding of how to predict visibility of work crews and aircraft, I build a MATLAB model for line-of-sight determination using GPS lat/long data.</p>
+					<p>Check out a more in-depth description at: <a href="https://buildingtime.herokuapp.com/">github</a><p>
+				</div>			
+			</div>
+			
+			<div id="project3" class="two-col-content">
+				<div id="project3-img"><img src="./images/computer_vision.jpg" alt="dog wearing glasses">
+				</div>
+				<div id="project3-content">
+					<h1>Computer Vision</h1>
+					<p>Stay tuned to learn more about an un-started computer vision project!</p>
+					<p>Computer vision is using programming to recognize objects and other interesting features from images and videos</p>
+					<p>Here's a cool <a href="https://www.youtube.com/watch?v=OcycT1Jwsns">Youtube</a> video.<p>
+				</div>			
+			</div>
         </div>
     </main>
     <footer>
         <div id="nav-container">
             <div class="nav-item">
-                <a href="#">About Me</a>
+                <a href="./about.html">About Me</a>
             </div>
             <div class="nav-item">
-                <a href="#">Projects</a>
+                <a href="./projects.html">Projects</a>
             </div>
             <div class="nav-item">
-                <a href="#">Contact Me</a>
+                <a href="./contact.html">Contact Me</a>
             </div>
             <div id="fill-space"></div>
             <div id="nav-resume" class="nav-item">
-                <a href="#">ResumeLink</a>
+                <a href="./resources/WS-Resume.pdf" download>Resume</a>
             </div>
         </div>
     </footer>

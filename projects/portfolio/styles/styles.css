@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+header {
+    color: lightgrey;
+}
+
+#nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 5fr 1fr;
+    width: 100%;
+    border: lightsalmon 1px dotted;
+
+    
+}
+
+.nav-item {
+    border:lightgrey 1px solid;
+    /* width: 300px; */
+    margin: 10px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+a:link {
+    color: lightblue;
+}
+
+a:visited{
+    color:lightskyblue
+}
+
+main {
+    border: wheat .5px dotted;
+	min-height:500px;
+	text-align: center;
+}
+
+.two-col-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+	background-color: navy;
+}
+
+.two-col-content div {
+	margin: 10px;
+}
+
+.two-col-content img {
+	max-width: 200px;
+}
+
+#portrait img{
+    max-width: 80%;
+    height: auto;
+}
+
+#contact-div ul{
+	list-style-type: none;
+	color: limegreen;
+}
