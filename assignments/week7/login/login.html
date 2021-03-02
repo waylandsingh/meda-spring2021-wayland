@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+        #form-layout {
+            width: 400px;
+            background-color:bisque;
+            /* recall: horiz align by no margin top/bottom and auto l/r */
+            margin: 0 auto; 
+            /* vertical align element starts at 50vh. so not QUITE middle*/
+            /* some kinda calculation can be done using vh and 270px */
+            margin-top: calc(50vh - 135px);
+            border-radius: 8px;
+
+        }
+
+        #form-layout label {
+            font-family: 'Oswald', 'Arial', sans-serif;
+            font-size: 1.5em;
+            padding: 10px;
+            display: block;
+            text-align: left;
+        }
+
+        #form-layout input {
+            font-size: 1.5 em;
+            border-radius: 8px;
+            border-style: none;
+            display: block;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        #form-layout form {
+            text-align: center;
+        }
+
+        #form-layout button {
+            display: inline-block;
+            border-radius: 8px;
+            border-style: none;
+            background-color: purple;
+            color: wheat;
+            font-family: 'Oswald', 'Arial',sans-serif;
+            font-size: 1.5em;
+            margin: 10px;
+            padding: 15px;
+        }
+    </style>
+
+    <script src="./jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    
+    <div id="form-layout">
+        <!-- learn how to select elements inside the form -->
+        <!-- without an action, things automatically resend to the same page -->
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+            <br />
+
+            <!-- two button options: input/button differ by action on click (buttons send a GETreq)-->
+            <!-- <input type="button" value="Login"> -->
+            <button id="login">Log In</button>
+        </form>
+    </div>
+
+    <!-- javascript can be written in the tag, but we'll do it separaetly -->
+    <script src = "login.js"></script>
+</body>
+</html>
