@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving box</title>
+
+    <style>
+        
+        #firstBox {
+            width: 200px;
+            height:200px;
+            background-color: palevioletred;
+            position: relative;
+        }
+    </style>
+
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="firstBox"></div>
+
+    <script>
+        // inside the body js! still using jquery
+        $("document").ready(function() {
+            console.log('ready check')
+        });
+
+        // using the body selector, keypress is accessible for ALL children (including the box)
+        $("body").keypress(function(e) {
+            let keyPressed = String.fromCharCode(e.which);
+            let myBox = $("#firstBox");
+            console.log($("html").css("height"))
+            //clunky way to move things. just use css incrementing instead (see below)
+            let currTop = parseInt($("#firstBox").css("top")); //use position instead?
+            let currLeft = parseInt($("firstBox").css("left"));
+
+            if (keyPressed == "s") {               
+                console.log('move down');
+                myBox.css("margin-top", "+=10vh"); //smart css incrementing, new-ish feature
+            } else if (keyPressed == "d") {
+                console.log("move right");
+                myBox.css("margin-left", "+=10vh");
+            } else if (keyPressed == "a") {
+                console.log("move left");
+                myBox.css("margin-left", "-=10vh")
+            } else if (keyPressed == "w") {
+                console.log("move up");
+                myBox.css("margin-top","-=10vh")
+            }
+        });
+
+    </script>
+
+</body>
+</html>
