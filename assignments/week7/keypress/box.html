@@ -24,19 +24,38 @@
     <div id="firstBox"></div>
 
     <script>
+        function randomColor() {
+            // get a random number between 2 and 2^24 (colors)
+            // convert the color number to a hexadecimal (16 options per place) string 
+            // return the string so that it can be used
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+        }
+
         // inside the body js! still using jquery
         $("document").ready(function() {
             console.log('ready check')
         });
 
+        let myBox = $("#firstBox");
+
+        myBox.click(function() {
+            myBox.css('background-color', randomColor());
+        });
+
+        // HINT TO LIMIT THE MOVEMENT TO THE EDGES use vw & vh to define edges past which the box won't move
+        
         // using the body selector, keypress is accessible for ALL children (including the box)
         $("body").keypress(function(e) {
             let keyPressed = String.fromCharCode(e.which);
-            let myBox = $("#firstBox");
-            console.log($("html").css("height"))
+            
+
+            // color change happens on every keypress(even invalid ones)
+            myBox.css('background-color', randomColor());
+
             //clunky way to move things. just use css incrementing instead (see below)
-            let currTop = parseInt($("#firstBox").css("top")); //use position instead?
-            let currLeft = parseInt($("firstBox").css("left"));
+            // let currTop = parseInt($("#firstBox").css("top")); //use position instead?
+            // let currLeft = parseInt($("firstBox").css("left"));
+
 
             if (keyPressed == "s") {               
                 console.log('move down');

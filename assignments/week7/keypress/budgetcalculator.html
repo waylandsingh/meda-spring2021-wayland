@@ -161,16 +161,25 @@
                 let gigs = parseFloat( $("#gigs").val() );
                 let investments = parseFloat( $("#investments").val() );
                 let income = job + gigs + investments;
+                
 
+                
                 let net = income - totalExpenses;
-                // console.log(`Your net income on a monthly basis is: ${income - totalExpenses}`);
+                
+                // taxes start
+                let regularTaxRate = 0.21;
+                let contractorTaxRate = 0.363;
+
+                let taxAmount = (regularTaxRate * (job + investments) + contractorTaxRate * gigs).toFixed(2)
                 
                 // results START
                 if (!isNaN(net)) {
                     if (net > 0) {
-                        $("#monthly-gain").text(`Congrats, you have an extra \$${net} this month!`)
+                        $("#monthly-gain").text(`Congrats, you have an extra \$${net} this month! 
+                        Expect to set aside ${taxAmount} aside for taxes. :'(`)
                     } else {
-                        $("#monthly-gain").text(`Uh oh, in the negative this month by \$${Math.abs(net)}`)
+                        $("#monthly-gain").text(`Uh oh, in the negative this month by \$${Math.abs(net)} 
+                        Expect to set aside ${taxAmount} aside for taxes. :'(`)
                     }
 
                 } else {
