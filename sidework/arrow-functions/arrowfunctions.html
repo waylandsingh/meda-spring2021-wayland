@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Arrow Function Syntax</title>
+
+
+</head>
+<body>
+    <h1>Most of the Useful Output will be in the console, FYI</h1>
+    <h2>bonus: `this` keyword and how it's affected by arrow functions </h2>
+
+    <script>
+        console.log('okay man')
+
+        // normal way to declare functions using the const keyword and assigning the function to object 'foo'
+        const foo = function() {
+            console.log('foo function is vanilla af');
+        }
+
+        foo();
+
+        // okay, how about this arrow thing?
+        // mainly shortens function definition
+        const bar = () => {
+            console.log('slightly shorter version, but there\'s more!');
+        }
+
+        bar();
+
+        const noo = () => console.log('a one-line function def with a NAMED function!');
+
+        noo();
+
+        // parameter passing works the same, and arrow functions implicitly return if there's a single statement
+        const nar = (p1,p2) => (p1 + p2); 
+        
+        console.log(nar('okay', ', here it is again '));
+
+
+        // what about `this` ? `this` is used to refer to an object 
+        const beer = {
+            name: 'PBR',
+            genre: 'hipster',
+            body: 'light',
+            derogatoryName: function() {
+                return `${this.genre} ${this.body}`
+            }
+        }
+
+        console.log('I bet you like to drink ' + beer.derogatoryName());
+
+        // this won't work when using the arrow syntax, so AVOID ARROWS FOR OBJECT METHODS!
+        // ALSO won't work forconstructors
+        // `this is also tricky when considering DOM Event listeners 
+        // (recall: functions that 'listen' for interaction with DOM objects)
+
+    </script>
+
+</body>
+</html>
